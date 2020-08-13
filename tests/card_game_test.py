@@ -6,8 +6,8 @@ from src.card_game import CardGame
 
 class TestCardGame(unittest.TestCase):
     def setUp(self):
-        self.card1 = Card("Spades", 1)
-        self.card2 = Card("Clubs", 4)
+        self.card1 = Card("Spades", 4)
+        self.card2 = Card("Clubs", 1)
         self.card_game_01 = CardGame(self.card1, self.card2)
 
     def test_game_has_card_01(self):
@@ -18,7 +18,7 @@ class TestCardGame(unittest.TestCase):
 
 
     def test_can_check_for_ace_true(self):
-        result = self.card_game_01.checkforAce(self.card1)
+        result = self.card_game_01.checkforAce(self.card2)
         self.assertEqual(result, True)
 
     
@@ -29,7 +29,7 @@ class TestCardGame(unittest.TestCase):
 
     def test_can_find_highest_card(self):
         result = self.card_game_01.highest_card(self.card1, self.card2)
-        self.assertEqual(result, self.card2)
+        self.assertEqual(result, self.card1)
 
     def test_can_calculate_total(self):
         cards = [self.card1, self.card2]
