@@ -18,12 +18,12 @@ class TestCardGame(unittest.TestCase):
 
 
     def test_can_check_for_ace_true(self):
-        result = self.card_game_01.checkforAce(self.card2)
+        result = self.card_game_01.check_for_ace(self.card2)
         self.assertEqual(result, True)
 
     
     def test_can_check_for_ace_false(self):
-        result = self.card_game_01.check_for_ace(self.card2)
+        result = self.card_game_01.check_for_ace(self.card1)
         self.assertEqual(result, False)
 
 
