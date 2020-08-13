@@ -34,4 +34,4 @@ class TestCardGame(unittest.TestCase):
     def test_can_calculate_total(self):
         cards = [self.card1, self.card2]
         result = self.card_game_01.cards_total(cards)
-        self.assertEqual(result, 5)
+        self.assertEqual(result, "You have a total of 5")

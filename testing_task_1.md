@@ -26,7 +26,7 @@ class CardGame:
    total # undefined variable
    for card in cards:
      total += card.value # will not work due to above issue
-     return "You have a total of" + total # can not add a string and an int
+     return "You have a total of" + total # can not add a string and an int and return needs to be unindented back
 
 
 ```
