@@ -5,7 +5,7 @@
 
 class CardGame:
 
-  def checkforAce(self, card):
+  def check_for_ace(self, card):
     if card.value == 1:
       return true
     else:
